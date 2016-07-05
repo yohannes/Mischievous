@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		652D9DB41D2A702900DE4B61 /* Human_Fart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 652D9DB31D2A702900DE4B61 /* Human_Fart.mp3 */; };
+		652D9DB61D2BB30E00DE4B61 /* Male_Burps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 652D9DB51D2BB30E00DE4B61 /* Male_Burps.mp3 */; };
+		652D9DB81D2BBA1400DE4B61 /* Male_Cough.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 652D9DB71D2BBA1400DE4B61 /* Male_Cough.mp3 */; };
+		652D9DBA1D2BBADD00DE4B61 /* Male_Sneeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 652D9DB91D2BBADD00DE4B61 /* Male_Sneeze.mp3 */; };
+		652D9DBE1D2BD4F600DE4B61 /* Male_Laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 652D9DBD1D2BD4F600DE4B61 /* Male_Laugh.mp3 */; };
+		652D9DC01D2BD5A300DE4B61 /* Male_Crying.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 652D9DBF1D2BD5A300DE4B61 /* Male_Crying.mp3 */; };
 		653572CD1D1E8C9300C67246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653572CC1D1E8C9300C67246 /* AppDelegate.swift */; };
 		653572CF1D1E8C9300C67246 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653572CE1D1E8C9300C67246 /* ViewController.swift */; };
 		653572D21D1E8C9300C67246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653572D01D1E8C9300C67246 /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 
 /* Begin PBXFileReference section */
 		652D9DB31D2A702900DE4B61 /* Human_Fart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Human_Fart.mp3; sourceTree = "<group>"; };
+		652D9DB51D2BB30E00DE4B61 /* Male_Burps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Male_Burps.mp3; sourceTree = "<group>"; };
+		652D9DB71D2BBA1400DE4B61 /* Male_Cough.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Male_Cough.mp3; sourceTree = "<group>"; };
+		652D9DB91D2BBADD00DE4B61 /* Male_Sneeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Male_Sneeze.mp3; sourceTree = "<group>"; };
+		652D9DBD1D2BD4F600DE4B61 /* Male_Laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Male_Laugh.mp3; sourceTree = "<group>"; };
+		652D9DBF1D2BD5A300DE4B61 /* Male_Crying.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Male_Crying.mp3; sourceTree = "<group>"; };
 		653572C91D1E8C9300C67246 /* Mischievous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mischievous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		653572CC1D1E8C9300C67246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		653572CE1D1E8C9300C67246 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +71,11 @@
 				653572D01D1E8C9300C67246 /* Main.storyboard */,
 				653572D31D1E8C9300C67246 /* Assets.xcassets */,
 				652D9DB31D2A702900DE4B61 /* Human_Fart.mp3 */,
+				652D9DB51D2BB30E00DE4B61 /* Male_Burps.mp3 */,
+				652D9DB71D2BBA1400DE4B61 /* Male_Cough.mp3 */,
+				652D9DBF1D2BD5A300DE4B61 /* Male_Crying.mp3 */,
+				652D9DBD1D2BD4F600DE4B61 /* Male_Laugh.mp3 */,
+				652D9DB91D2BBADD00DE4B61 /* Male_Sneeze.mp3 */,
 				653572D51D1E8C9300C67246 /* LaunchScreen.storyboard */,
 				653572D81D1E8C9300C67246 /* Info.plist */,
 			);
@@ -126,9 +141,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				653572D71D1E8C9300C67246 /* LaunchScreen.storyboard in Resources */,
+				652D9DC01D2BD5A300DE4B61 /* Male_Crying.mp3 in Resources */,
+				652D9DBE1D2BD4F600DE4B61 /* Male_Laugh.mp3 in Resources */,
+				652D9DBA1D2BBADD00DE4B61 /* Male_Sneeze.mp3 in Resources */,
 				652D9DB41D2A702900DE4B61 /* Human_Fart.mp3 in Resources */,
 				653572D41D1E8C9300C67246 /* Assets.xcassets in Resources */,
 				653572D21D1E8C9300C67246 /* Main.storyboard in Resources */,
+				652D9DB81D2BBA1400DE4B61 /* Male_Cough.mp3 in Resources */,
+				652D9DB61D2BB30E00DE4B61 /* Male_Burps.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,23 +24,23 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     @IBAction func burpButtonDidTouch(sender: UIButton) {
-        print("burping....")
+        self.playSoundEffect("Male_Burps")
     }
 
     @IBAction func coughButtonDidTouch(sender: UIButton) {
-        print("coughing....")
+        self.playSoundEffect("Male_Cough")
     }
     
-    @IBAction func yawnButtonDidTouch(sender: UIButton) {
-        print("yawning....")
+    @IBAction func laughButtonDidTouch(sender: UIButton) {
+        self.playSoundEffect("Male_Laugh")
     }
     
     @IBAction func sneezeButtonDidTouch(sender: UIButton) {
-        print("sneezing....")
+        self.playSoundEffect("Male_Sneeze")
     }
     
-    @IBAction func screamButtonDidTouch(sender: UIButton) {
-        print("screaming....")
+    @IBAction func cryButtonDidTouch(sender: UIButton) {
+        self.playSoundEffect("Male_Crying")
     }
     
     // MARK: - Helper Methods
