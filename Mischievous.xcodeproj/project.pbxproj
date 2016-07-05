@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652D9DB41D2A702900DE4B61 /* Human_Fart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 652D9DB31D2A702900DE4B61 /* Human_Fart.mp3 */; };
 		653572CD1D1E8C9300C67246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653572CC1D1E8C9300C67246 /* AppDelegate.swift */; };
 		653572CF1D1E8C9300C67246 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653572CE1D1E8C9300C67246 /* ViewController.swift */; };
 		653572D21D1E8C9300C67246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653572D01D1E8C9300C67246 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		652D9DB31D2A702900DE4B61 /* Human_Fart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Human_Fart.mp3; sourceTree = "<group>"; };
 		653572C91D1E8C9300C67246 /* Mischievous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mischievous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		653572CC1D1E8C9300C67246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		653572CE1D1E8C9300C67246 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				653572CE1D1E8C9300C67246 /* ViewController.swift */,
 				653572D01D1E8C9300C67246 /* Main.storyboard */,
 				653572D31D1E8C9300C67246 /* Assets.xcassets */,
+				652D9DB31D2A702900DE4B61 /* Human_Fart.mp3 */,
 				653572D51D1E8C9300C67246 /* LaunchScreen.storyboard */,
 				653572D81D1E8C9300C67246 /* Info.plist */,
 			);
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				653572D71D1E8C9300C67246 /* LaunchScreen.storyboard in Resources */,
+				652D9DB41D2A702900DE4B61 /* Human_Fart.mp3 in Resources */,
 				653572D41D1E8C9300C67246 /* Assets.xcassets in Resources */,
 				653572D21D1E8C9300C67246 /* Main.storyboard in Resources */,
 			);
@@ -286,6 +290,7 @@
 				653572DD1D1E8C9300C67246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
