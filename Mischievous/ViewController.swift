@@ -18,40 +18,40 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     // MARK: - IBAction Properties
     
-    @IBAction func fartButtonDidTouch(sender: UIButton) {
+    @IBAction func fartButtonDidTouch(_ sender: UIButton) {
 //        self.playSoundEffect("Human_Fart.mp3")
         self.playSoundEffect("Human_Fart")
     }
     
-    @IBAction func burpButtonDidTouch(sender: UIButton) {
+    @IBAction func burpButtonDidTouch(_ sender: UIButton) {
         self.playSoundEffect("Male_Burps")
     }
 
-    @IBAction func coughButtonDidTouch(sender: UIButton) {
+    @IBAction func coughButtonDidTouch(_ sender: UIButton) {
         self.playSoundEffect("Male_Cough")
     }
     
-    @IBAction func laughButtonDidTouch(sender: UIButton) {
+    @IBAction func laughButtonDidTouch(_ sender: UIButton) {
         self.playSoundEffect("Male_Laugh")
     }
     
-    @IBAction func sneezeButtonDidTouch(sender: UIButton) {
+    @IBAction func sneezeButtonDidTouch(_ sender: UIButton) {
         self.playSoundEffect("Male_Sneeze")
     }
     
-    @IBAction func cryButtonDidTouch(sender: UIButton) {
+    @IBAction func cryButtonDidTouch(_ sender: UIButton) {
         self.playSoundEffect("Male_Crying")
     }
     
     // MARK: - Helper Methods
     
-    private func playSoundEffect(fileName: String) {
-        guard let validSoundFile = NSBundle.mainBundle().pathForResource(fileName, ofType: "mp3"), validSoundFileURL = NSURL(string: validSoundFile) else {
+    fileprivate func playSoundEffect(_ fileName: String) {
+        guard let validSoundFile = Bundle.main.path(forResource: fileName, ofType: "mp3"), let validSoundFileURL = URL(string: validSoundFile) else {
             return
         }
     
         do {
-            self.audioPlayer = try AVAudioPlayer(contentsOfURL: validSoundFileURL)
+            self.audioPlayer = try AVAudioPlayer(contentsOf: validSoundFileURL)
         }
         catch {
             print("there's an error initializing an instance of AVAudioPlayer")
