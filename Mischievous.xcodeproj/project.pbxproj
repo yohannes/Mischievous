@@ -18,6 +18,7 @@
 		653572D21D1E8C9300C67246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653572D01D1E8C9300C67246 /* Main.storyboard */; };
 		653572D41D1E8C9300C67246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653572D31D1E8C9300C67246 /* Assets.xcassets */; };
 		653572D71D1E8C9300C67246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653572D51D1E8C9300C67246 /* LaunchScreen.storyboard */; };
+		656B2EB81DB61D420005796E /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B2EB71DB61D420005796E /* LinearProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		653572D31D1E8C9300C67246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		653572D61D1E8C9300C67246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		653572D81D1E8C9300C67246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656B2EB71DB61D420005796E /* LinearProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		653572CB1D1E8C9300C67246 /* Mischievous */ = {
 			isa = PBXGroup;
 			children = (
+				656B2EB71DB61D420005796E /* LinearProgressBar.swift */,
 				653572CC1D1E8C9300C67246 /* AppDelegate.swift */,
 				653572CE1D1E8C9300C67246 /* ViewController.swift */,
 				653572D01D1E8C9300C67246 /* Main.storyboard */,
@@ -162,6 +165,7 @@
 			files = (
 				653572CF1D1E8C9300C67246 /* ViewController.swift in Sources */,
 				653572CD1D1E8C9300C67246 /* AppDelegate.swift in Sources */,
+				656B2EB81DB61D420005796E /* LinearProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

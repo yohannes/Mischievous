@@ -14,12 +14,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - Stored Properties
     
     var audioPlayer: AVAudioPlayer?
-//    var soundEffectDirectoryPath: NSURL?
+    var linearProgressBar: LinearProgressBar!
 
     // MARK: - IBAction Properties
     
     @IBAction func fartButtonDidTouch(_ sender: UIButton) {
-//        self.playSoundEffect("Human_Fart.mp3")
         self.playSoundEffect("Human_Fart")
     }
     
@@ -52,6 +51,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
         do {
             self.audioPlayer = try AVAudioPlayer(contentsOf: validSoundFileURL)
+            self.audioPlayer?.delegate = self
+            self.linearProgressBar.startAnimation()
         }
         catch {
             print("there's an error initializing an instance of AVAudioPlayer")
@@ -65,8 +66,26 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.audioPlayer?.delegate = self
         self.audioPlayer?.prepareToPlay()
+      
+        self.linearProgressBar = LinearProgressBar()
+        self.configureLinearProgressBar()
+    }
+  
+    // MARK: - AVAudioPlayerDelegate Methods
+  
+  func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+    if flag {
+      self.linearProgressBar.stopAnimation()
+    }
+  }
+  
+    // MARK: - Private Methods
+  
+    fileprivate func configureLinearProgressBar(){
+      linearProgressBar.backgroundColor = UIColor(red:0.68, green:0.81, blue:0.72, alpha:1.0)
+      linearProgressBar.progressBarColor = UIColor(red:0.26, green:0.65, blue:0.45, alpha:1.0)
+      linearProgressBar.heightForLinearBar = 5
     }
 }
 
