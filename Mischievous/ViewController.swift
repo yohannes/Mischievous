@@ -88,7 +88,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
   
   func incrementProgressBar() {
     guard let validProgress = self.navigationController?.progress else { return }
-    print("************\(self.navigationController?.progress)")
     self.navigationController?.setProgress(validProgress + Float(1 / self.audioDuration), animated: true)
   }
 
