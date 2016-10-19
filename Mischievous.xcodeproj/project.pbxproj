@@ -18,7 +18,9 @@
 		653572D21D1E8C9300C67246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653572D01D1E8C9300C67246 /* Main.storyboard */; };
 		653572D41D1E8C9300C67246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653572D31D1E8C9300C67246 /* Assets.xcassets */; };
 		653572D71D1E8C9300C67246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653572D51D1E8C9300C67246 /* LaunchScreen.storyboard */; };
-		656B2EB81DB61D420005796E /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B2EB71DB61D420005796E /* LinearProgressBar.swift */; };
+		656B2EBE1DB7AFA00005796E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656B2EBA1DB7AFA00005796E /* Info.plist */; };
+		656B2EBF1DB7AFA00005796E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B2EBC1DB7AFA00005796E /* ProgressView.swift */; };
+		656B2EC01DB7AFA00005796E /* UINavigationController+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B2EBD1DB7AFA00005796E /* UINavigationController+Progress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,10 @@
 		653572D31D1E8C9300C67246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		653572D61D1E8C9300C67246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		653572D81D1E8C9300C67246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		656B2EB71DB61D420005796E /* LinearProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
+		656B2EBA1DB7AFA00005796E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656B2EBB1DB7AFA00005796E /* KYNavigationProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYNavigationProgress.h; sourceTree = "<group>"; };
+		656B2EBC1DB7AFA00005796E /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		656B2EBD1DB7AFA00005796E /* UINavigationController+Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Progress.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +73,7 @@
 		653572CB1D1E8C9300C67246 /* Mischievous */ = {
 			isa = PBXGroup;
 			children = (
-				656B2EB71DB61D420005796E /* LinearProgressBar.swift */,
+				656B2EB91DB7AFA00005796E /* KYNavigationProgress */,
 				653572CC1D1E8C9300C67246 /* AppDelegate.swift */,
 				653572CE1D1E8C9300C67246 /* ViewController.swift */,
 				653572D01D1E8C9300C67246 /* Main.storyboard */,
@@ -83,6 +88,17 @@
 				653572D81D1E8C9300C67246 /* Info.plist */,
 			);
 			path = Mischievous;
+			sourceTree = "<group>";
+		};
+		656B2EB91DB7AFA00005796E /* KYNavigationProgress */ = {
+			isa = PBXGroup;
+			children = (
+				656B2EBA1DB7AFA00005796E /* Info.plist */,
+				656B2EBB1DB7AFA00005796E /* KYNavigationProgress.h */,
+				656B2EBC1DB7AFA00005796E /* ProgressView.swift */,
+				656B2EBD1DB7AFA00005796E /* UINavigationController+Progress.swift */,
+			);
+			path = KYNavigationProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +168,7 @@
 				653572D41D1E8C9300C67246 /* Assets.xcassets in Resources */,
 				653572D21D1E8C9300C67246 /* Main.storyboard in Resources */,
 				652D9DB81D2BBA1400DE4B61 /* Male_Cough.mp3 in Resources */,
+				656B2EBE1DB7AFA00005796E /* Info.plist in Resources */,
 				652D9DB61D2BB30E00DE4B61 /* Male_Burps.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,9 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656B2EC01DB7AFA00005796E /* UINavigationController+Progress.swift in Sources */,
 				653572CF1D1E8C9300C67246 /* ViewController.swift in Sources */,
+				656B2EBF1DB7AFA00005796E /* ProgressView.swift in Sources */,
 				653572CD1D1E8C9300C67246 /* AppDelegate.swift in Sources */,
-				656B2EB81DB61D420005796E /* LinearProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -271,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
