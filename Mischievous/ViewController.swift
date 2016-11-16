@@ -14,10 +14,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - Stored Properties
     
     var audioPlayer: AVAudioPlayer?
-    //  var timer: Timer!
+
     var audioDuration: TimeInterval!
     
-    // MARK: - IBAction Properties
+    // MARK: - IBOutlet Properties
+    
+    @IBOutlet var audioButtons: [UIButton]!
+    
+    // MARK: - IBAction Methods
     
     @IBAction func fartButtonDidTouch(_ sender: UIButton) {
         self.playSoundEffect("Human_Fart")
@@ -46,6 +50,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - Helper Methods
     
     fileprivate func playSoundEffect(_ fileName: String) {
+        _ = self.audioButtons.map { (audioButton) -> Void in
+            audioButton.isEnabled = false
+        }
+        
         guard let validSoundFile = Bundle.main.path(forResource: fileName, ofType: "mp3"), let validSoundFileURL = URL(string: validSoundFile) else {
             return
         }
@@ -85,6 +93,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if flag {
             self.navigationController?.finishProgress()
+            
+            _ = self.audioButtons.map { (audioButton) -> Void in
+                audioButton.isEnabled = true
+            }
         }
     }
 }
