@@ -55,6 +55,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
         guard let validSoundFile = Bundle.main.path(forResource: fileName, ofType: "mp3"), let validSoundFileURL = URL(string: validSoundFile) else {
+            assertionFailure("No MP3 file found!")
             return
         }
         
