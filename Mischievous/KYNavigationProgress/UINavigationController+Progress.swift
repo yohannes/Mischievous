@@ -106,7 +106,7 @@ public extension UINavigationController {
         
         UIView.animate(withDuration: 0.25,
             animations: {
-                self.progressView.bar.alpha = 0
+//                self.progressView.bar.alpha = 0
             }, completion: { finished in
                 self.progressView.progress = 0
             }
