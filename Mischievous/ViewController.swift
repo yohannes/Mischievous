@@ -17,6 +17,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     var audioDuration: TimeInterval!
     
+    enum AudioAsset: String {
+        case fart = "Human_Fart"
+        case burps = "Male_Burps"
+        case cough = "Male_Cough"
+        case laugh = "Male_Laugh"
+        case sneeze = "Male_Sneeze"
+        case crying = "Male_Crying"
+    }
+    
     // MARK: - IBOutlet Properties
     
     @IBOutlet var audioButtons: [UIButton]!
@@ -24,27 +33,27 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - IBAction Methods
     
     @IBAction func fartButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect("Human_Fart")
+        self.playSoundEffect(AudioAsset.fart.rawValue)
     }
     
     @IBAction func burpButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect("Male_Burps")
+        self.playSoundEffect(AudioAsset.burps.rawValue)
     }
     
     @IBAction func coughButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect("Male_Cough")
+        self.playSoundEffect(AudioAsset.cough.rawValue)
     }
     
     @IBAction func laughButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect("Male_Laugh")
+        self.playSoundEffect(AudioAsset.laugh.rawValue)
     }
     
     @IBAction func sneezeButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect("Male_Sneeze")
+        self.playSoundEffect(AudioAsset.sneeze.rawValue)
     }
     
     @IBAction func cryButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect("Male_Crying")
+        self.playSoundEffect(AudioAsset.crying.rawValue)
     }
     
     // MARK: - Helper Methods
