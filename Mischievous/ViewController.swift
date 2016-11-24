@@ -63,6 +63,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     fileprivate func playSoundEffect(_ fileName: String) {
         _ = self.audioButtons.map { (audioButton) -> Void in
             audioButton.isEnabled = false
+            UIView.animate(withDuration: 1) { audioButton.alpha = 0.6 }
         }
         
         guard let validSoundFile = Bundle.main.path(forResource: fileName, ofType: "mp3"), let validSoundFileURL = URL(string: validSoundFile) else {
@@ -116,6 +117,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             
             _ = self.audioButtons.map { (audioButton) -> Void in
                 audioButton.isEnabled = true
+                UIView.animate(withDuration: 1) { audioButton.alpha = 1 }
             }
         }
     }
