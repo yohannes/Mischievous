@@ -17,6 +17,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     var audioDuration: TimeInterval!
     
+    var viewPropertyAnimator: UIViewPropertyAnimator!
+    
     enum AudioAsset: String {
         case fart = "Human_Fart"
         case burps = "Male_Burps"
@@ -74,11 +76,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             
             self.audioDuration = self.audioPlayer?.duration
             
-            UIView.animate(withDuration: self.audioDuration,
-                           delay: 0,
-                           options: UIViewAnimationOptions.curveLinear,
-                           animations: { self.navigationController?.setProgress(1, animated: true) },
-                           completion: nil)
+            self.viewPropertyAnimator = UIViewPropertyAnimator(duration: self.audioDuration,
+                                                               curve: .linear,
+                                                               animations: {
+                                                                self.navigationController?.setProgress(1, animated: true)
+            })
+            self.viewPropertyAnimator.startAnimation()
+            
+            // Alternative animation implementation to UIViewPropertyAnimator
+//            UIView.animate(withDuration: self.audioDuration,
+//                           delay: 0,
+//                           options: UIViewAnimationOptions.curveLinear,
+//                           animations: { self.navigationController?.setProgress(1, animated: true) },
+//                           completion: nil)
         }
         catch {
             print("there's an error initializing an instance of AVAudioPlayer")
