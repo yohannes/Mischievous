@@ -78,7 +78,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             
             self.viewPropertyAnimator = UIViewPropertyAnimator(duration: self.audioDuration,
                                                                curve: .linear,
-                                                               animations: {
+                                                               animations: { [unowned self] in
                                                                 self.navigationController?.setProgress(1, animated: true)
             })
             self.viewPropertyAnimator.startAnimation()
