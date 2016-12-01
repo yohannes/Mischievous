@@ -19,13 +19,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     var viewPropertyAnimator: UIViewPropertyAnimator!
     
-    enum AudioAsset: String {
-        case fart = "Human_Fart"
-        case burps = "Male_Burps"
-        case cough = "Male_Cough"
-        case laugh = "Male_Laugh"
-        case sneeze = "Male_Sneeze"
-        case crying = "Male_Crying"
+    enum AudioAsset {
+        case fart, burps, cough, laugh, sneeze, crying
+        
+        var title: String {
+            switch self {
+            case .fart: return "Human_Fart"
+            case .burps: return "Male_Burps"
+            case .cough: return "Male_Cough"
+            case .laugh: return "Male_Laugh"
+            case .sneeze: return "Male_Sneeze"
+            case .crying: return "Male_Crying"
+            }
+        }
     }
     
     // MARK: - IBOutlet Properties
@@ -35,27 +41,27 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - IBAction Methods
     
     @IBAction func fartButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect(AudioAsset.fart.rawValue)
+        self.playSoundEffect(AudioAsset.fart.title)
     }
     
     @IBAction func burpButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect(AudioAsset.burps.rawValue)
+        self.playSoundEffect(AudioAsset.burps.title)
     }
     
     @IBAction func coughButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect(AudioAsset.cough.rawValue)
+        self.playSoundEffect(AudioAsset.cough.title)
     }
     
     @IBAction func laughButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect(AudioAsset.laugh.rawValue)
+        self.playSoundEffect(AudioAsset.laugh.title)
     }
     
     @IBAction func sneezeButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect(AudioAsset.sneeze.rawValue)
+        self.playSoundEffect(AudioAsset.sneeze.title)
     }
     
     @IBAction func cryButtonDidTouch(_ sender: UIButton) {
-        self.playSoundEffect(AudioAsset.crying.rawValue)
+        self.playSoundEffect(AudioAsset.crying.title)
     }
     
     // MARK: - Helper Methods
