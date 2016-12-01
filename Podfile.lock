@@ -1,0 +1,12 @@
+PODS:
+  - KYNavigationProgress (2.0.0)
+
+DEPENDENCIES:
+  - KYNavigationProgress (~> 2.0)
+
+SPEC CHECKSUMS:
+  KYNavigationProgress: 2b0ee11a2e05922ebb279505dbb98ffa56ee89f2
+
+PODFILE CHECKSUM: 53fafbede8918ea63f71a3f90c2a7358c4565967
+
+COCOAPODS: 1.1.1

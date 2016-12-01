@@ -18,9 +18,7 @@
 		653572D21D1E8C9300C67246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653572D01D1E8C9300C67246 /* Main.storyboard */; };
 		653572D41D1E8C9300C67246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653572D31D1E8C9300C67246 /* Assets.xcassets */; };
 		653572D71D1E8C9300C67246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653572D51D1E8C9300C67246 /* LaunchScreen.storyboard */; };
-		656B2EBE1DB7AFA00005796E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656B2EBA1DB7AFA00005796E /* Info.plist */; };
-		656B2EBF1DB7AFA00005796E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B2EBC1DB7AFA00005796E /* ProgressView.swift */; };
-		656B2EC01DB7AFA00005796E /* UINavigationController+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B2EBD1DB7AFA00005796E /* UINavigationController+Progress.swift */; };
+		99934EEB473109EC1B9F75B5 /* Pods_Mischievous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF193C94AF9680120880154D /* Pods_Mischievous.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +35,9 @@
 		653572D31D1E8C9300C67246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		653572D61D1E8C9300C67246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		653572D81D1E8C9300C67246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		656B2EBA1DB7AFA00005796E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		656B2EBB1DB7AFA00005796E /* KYNavigationProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYNavigationProgress.h; sourceTree = "<group>"; };
-		656B2EBC1DB7AFA00005796E /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		656B2EBD1DB7AFA00005796E /* UINavigationController+Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Progress.swift"; sourceTree = "<group>"; };
+		AF193C94AF9680120880154D /* Pods_Mischievous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mischievous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BCB1F8710E56D49D2D62CB /* Pods-Mischievous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mischievous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mischievous/Pods-Mischievous.release.xcconfig"; sourceTree = "<group>"; };
+		EBC27116039099F2EE71A980 /* Pods-Mischievous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mischievous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mischievous/Pods-Mischievous.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99934EEB473109EC1B9F75B5 /* Pods_Mischievous.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +57,8 @@
 			children = (
 				653572CB1D1E8C9300C67246 /* Mischievous */,
 				653572CA1D1E8C9300C67246 /* Products */,
+				7A634742495A104513BCFF1B /* Pods */,
+				97146418E090FCA40B146868 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +73,6 @@
 		653572CB1D1E8C9300C67246 /* Mischievous */ = {
 			isa = PBXGroup;
 			children = (
-				656B2EB91DB7AFA00005796E /* KYNavigationProgress */,
 				653572CC1D1E8C9300C67246 /* AppDelegate.swift */,
 				653572CE1D1E8C9300C67246 /* ViewController.swift */,
 				653572D01D1E8C9300C67246 /* Main.storyboard */,
@@ -90,15 +89,21 @@
 			path = Mischievous;
 			sourceTree = "<group>";
 		};
-		656B2EB91DB7AFA00005796E /* KYNavigationProgress */ = {
+		7A634742495A104513BCFF1B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				656B2EBA1DB7AFA00005796E /* Info.plist */,
-				656B2EBB1DB7AFA00005796E /* KYNavigationProgress.h */,
-				656B2EBC1DB7AFA00005796E /* ProgressView.swift */,
-				656B2EBD1DB7AFA00005796E /* UINavigationController+Progress.swift */,
+				EBC27116039099F2EE71A980 /* Pods-Mischievous.debug.xcconfig */,
+				B8BCB1F8710E56D49D2D62CB /* Pods-Mischievous.release.xcconfig */,
 			);
-			path = KYNavigationProgress;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97146418E090FCA40B146868 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF193C94AF9680120880154D /* Pods_Mischievous.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 653572DB1D1E8C9300C67246 /* Build configuration list for PBXNativeTarget "Mischievous" */;
 			buildPhases = (
+				C60FE29902E22FDBA9678514 /* [CP] Check Pods Manifest.lock */,
 				653572C51D1E8C9300C67246 /* Sources */,
 				653572C61D1E8C9300C67246 /* Frameworks */,
 				653572C71D1E8C9300C67246 /* Resources */,
+				990BE0A55A2E682BC04F82C3 /* [CP] Embed Pods Frameworks */,
+				5D59710A9A96E68EF3112472 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,7 +136,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Yohannes Wijaya";
 				TargetAttributes = {
 					653572C81D1E8C9300C67246 = {
@@ -169,21 +177,66 @@
 				653572D41D1E8C9300C67246 /* Assets.xcassets in Resources */,
 				653572D21D1E8C9300C67246 /* Main.storyboard in Resources */,
 				652D9DB81D2BBA1400DE4B61 /* Male_Cough.mp3 in Resources */,
-				656B2EBE1DB7AFA00005796E /* Info.plist in Resources */,
 				652D9DB61D2BB30E00DE4B61 /* Male_Burps.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D59710A9A96E68EF3112472 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mischievous/Pods-Mischievous-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		990BE0A55A2E682BC04F82C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mischievous/Pods-Mischievous-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C60FE29902E22FDBA9678514 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		653572C51D1E8C9300C67246 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656B2EC01DB7AFA00005796E /* UINavigationController+Progress.swift in Sources */,
 				653572CF1D1E8C9300C67246 /* ViewController.swift in Sources */,
-				656B2EBF1DB7AFA00005796E /* ProgressView.swift in Sources */,
 				653572CD1D1E8C9300C67246 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +353,9 @@
 		};
 		653572DC1D1E8C9300C67246 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBC27116039099F2EE71A980 /* Pods-Mischievous.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4Z5JKF2M6S;
 				INFOPLIST_FILE = Mischievous/Info.plist;
@@ -313,7 +368,9 @@
 		};
 		653572DD1D1E8C9300C67246 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BCB1F8710E56D49D2D62CB /* Pods-Mischievous.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4Z5JKF2M6S;
 				INFOPLIST_FILE = Mischievous/Info.plist;

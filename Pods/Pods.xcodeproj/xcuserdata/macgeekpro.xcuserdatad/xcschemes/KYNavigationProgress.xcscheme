@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "653572C81D1E8C9300C67246"
-               BuildableName = "Mischievous.app"
-               BlueprintName = "Mischievous"
-               ReferencedContainer = "container:Mischievous.xcodeproj">
+               BlueprintIdentifier = "2FAF0EFB26F0B57F93F98FD82AA2E74E"
+               BuildableName = "KYNavigationProgress.framework"
+               BlueprintName = "KYNavigationProgress"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "653572C81D1E8C9300C67246"
-            BuildableName = "Mischievous.app"
-            BlueprintName = "Mischievous"
-            ReferencedContainer = "container:Mischievous.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "653572C81D1E8C9300C67246"
-            BuildableName = "Mischievous.app"
-            BlueprintName = "Mischievous"
-            ReferencedContainer = "container:Mischievous.xcodeproj">
+            BlueprintIdentifier = "2FAF0EFB26F0B57F93F98FD82AA2E74E"
+            BuildableName = "KYNavigationProgress.framework"
+            BlueprintName = "KYNavigationProgress"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "653572C81D1E8C9300C67246"
-            BuildableName = "Mischievous.app"
-            BlueprintName = "Mischievous"
-            ReferencedContainer = "container:Mischievous.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
