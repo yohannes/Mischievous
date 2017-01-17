@@ -6,11 +6,23 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/yoha/Mischievous/blob/master/LICENSE)
 [![Issues](https://img.shields.io/github/issues/yoha/Mischievous.svg?style=flat)](https://github.com/yoha/Mischievous/issues)
 
-## An iOS app that lists and plays prank sound effects. 
+### An iOS app that lists and plays prank sound effects. 
 
 ![Mischievous GIF](http://i.giphy.com/d3pWU68cAnEAIYec.gif)
 
 Gif created with [GIPHY](http://giphy.com)
+
+### Installation Instructions
+
+1. Install [Xcode 8](https://developer.apple.com/xcode/)
+2. Download [Mischievous source code](https://github.com/yoha/Mischievous/releases/latest)
+3. Open `Mischievous.xcworkspace` in Xcode
+4. Open Xcode's Preferences -> Accounts -> add your Apple ID
+5. In Xcode's project navigator, click Mischievous on the very top and go to Targets list -> Mischievous -> General -> Identity and add a word to the end of the entry in Bundle Identifier to make it unique. Also select your Apple ID in Signing -> Team
+6. Connect your iPhone and select it in Xcode's Product menu -> Destination
+7. Press CMD+R or Product -> Run to install Mischievous
+
+---
 
 3rd Party Libraries used in this app:
 - [KYNavigationProgress](https://github.com/ykyouhei/KYNavigationProgress) by [ykyouhei](https://github.com/ykyouhei/)
